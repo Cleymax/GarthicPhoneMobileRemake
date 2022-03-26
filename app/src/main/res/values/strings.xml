@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">GarthicPhone</string>
+    <string name="app_name" translatable="false">GarthicPhone</string>
+    <string name="rules">Rules</string>
+    <string name="join_party">Join a room</string>
+    <string name="create_party">Create a room</string>
+    <string name="ready">Pret</string>
+    <string name="room_code">Room Code</string>
+    <string name="username">Username</string>
+    <string name="state">State</string>
+    <string name="enter">Valid</string>
+    <string name="describe_draw">What is it?</string>
+    <string name="what_to_draw">What shall I make them guess?</string>
+    <string name="end_of_game">Game ended !</string>
 </resources>
