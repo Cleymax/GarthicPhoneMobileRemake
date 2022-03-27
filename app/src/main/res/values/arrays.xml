@@ -1,0 +1,16 @@
+<resources>
+    <!--    Theme list-->
+    <string-array name="theme_entries">
+        <item>@string/light_theme</item>
+        <item>@string/dark_theme</item>
+        <item>@string/system_theme</item>
+    </string-array>
+
+    <!--    Theme values -->
+    <string-array name="theme_values">
+        <item>light</item>
+        <item>dark</item>
+        <item>system</item>
+    </string-array>
+
+</resources>

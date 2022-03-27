@@ -1,0 +1,32 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto" title="@string/settings__title">
+
+
+    <PreferenceCategory app:title="@string/settings__general">
+
+        <ListPreference
+            app:defaultValue="dark"
+            app:entries="@array/theme_entries"
+            app:entryValues="@array/theme_values"
+            app:key="theme"
+            app:title="@string/settings__theme"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/settings__socket">
+
+        <EditTextPreference
+            app:key="ip"
+            app:title="@string/ip_address"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="port"
+            app:defaultValue="3452"
+            app:title="@string/port_number"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

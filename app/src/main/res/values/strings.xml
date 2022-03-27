@@ -11,4 +11,20 @@
     <string name="describe_draw">What is it?</string>
     <string name="what_to_draw">What shall I make them guess?</string>
     <string name="end_of_game">Game ended !</string>
+    <string name="intro_description">Come and draw with your friends!</string>
+    <string name="need_permission">We need some permissions?</string>
+    <string name="ip_address">Ip Address</string>
+    <string name="port_number">Port Number</string>
+    <string name="default_port">3542</string>
+    <string name="valid_address_ip">Please enter a valid IP address!</string>
+    <string name="settings__title">Settings</string>
+    <string name="settings__socket">Socket Server</string>
+    <string name="settings__general">General</string>
+    <string name="settings__theme">Theme</string>
+    <string name="light_theme">Light</string>
+    <string name="dark_theme">Dark</string>
+    <string name="system_theme">System value</string>
+    <string name="invalid_port">Port must be between 0 and 65535</string>
+    <string name="qrcode_share_with_friend">Let\'s share the QRcode with yours friends !</string>
+    <string name="scan_qrcode">Scan a QRcode</string>
 </resources>
