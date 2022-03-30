@@ -39,6 +39,8 @@ public class IntroActivity extends MaterialIntroActivity {
                 .title(getResources().getString(R.string.need_permission))
                 .build());
 
+        addSlide(new ChooseUsernameFragment());
+
         addSlide(new ChooseSocketServerFragment());
     }
 }

@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.Random;
 
 import fr.univ_smb.iut_acy.perrincl.garthicphone.intro.IntroActivity;
+import fr.univ_smb.iut_acy.perrincl.garthicphone.model.Room;
 import fr.univ_smb.iut_acy.perrincl.garthicphone.settings.SettingsActivity;
 import fr.univ_smb.iut_acy.perrincl.garthicphone.tools.RandomUtils;
 
@@ -52,13 +53,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         setContentView(R.layout.activity_main);
+
         findViewById(R.id.settings_btn).setOnClickListener(view -> {
             Intent intent = new Intent(this, SettingsActivity.class);
             startActivity(intent);
         });
         findViewById(R.id.create_game).setOnClickListener(view -> {
             Intent intent = new Intent(this, NewGameActivity.class);
-            intent.putExtra("game_id", "" + RandomUtils.getRandomInt(100000, 999999));
+            intent.putExtra("game_id", Room.generateRoomCode());
             startActivity(intent);
         });
         findViewById(R.id.join_game).setOnClickListener(view -> {

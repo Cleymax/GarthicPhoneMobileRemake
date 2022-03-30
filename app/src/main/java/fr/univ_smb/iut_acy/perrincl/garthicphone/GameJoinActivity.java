@@ -2,8 +2,10 @@ package fr.univ_smb.iut_acy.perrincl.garthicphone;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceManager;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -68,6 +70,12 @@ public class GameJoinActivity extends AppCompatActivity {
             public void afterTextChanged(Editable editable) {
 
             }
+        });
+
+        findViewById(R.id.host_activity_start_button).setOnClickListener(v -> {
+            SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this.getApplicationContext());
+            String username = sp.getString("username", "Inconnu");
+            new ClientSocket(sp,"JOIN-" + username + "-" + til.getEditText().getText().toString());
         });
     }
 }
